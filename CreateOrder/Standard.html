@@ -1,0 +1,53 @@
+
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Order — Standard Plan</title>
+<link rel="stylesheet" href="/assets/css/style.css"/></head><body>
+
+<div class="nav">
+  <div class="nav-inner container">
+    <a class="brand" href="/index.html"><span class="logo"></span><span>P12Hub</span></a>
+    <nav class="nav-links">
+      <a href="/pricing.html">Pricing</a>
+      <a href="/CreateOrder/Standard.html">Order</a>
+      <a href="/team.html">Team</a>
+      <a href="/help.html">Help</a>
+      <a href="/share.html">Share</a>
+      <a href="/support.html">Support</a>
+      <a href="/Account/SignIn.html" class="btn ghost">Sign In</a>
+      <a href="/Account/SignUp.html" class="btn">Sign Up</a>
+    </nav>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Standard Plan</h2>
+  <p class="muted">No waiting. Get certificate now. 90-day revoke warranty (sample text).</p>
+  <form class="card" onsubmit="return fakeCheckout(event)">
+    <label class="label">Email</label>
+    <input class="input" required type="email" placeholder="you@example.com" name="email"/>
+    <label class="label">Delivery</label>
+    <select class="input" name="delivery"><option value="instant">Instant (download)</option><option value="email">Email</option></select>
+    <label class="label">Notes</label>
+    <textarea class="input" name="notes" rows="4" placeholder="Entitlements, bundle IDs, etc."></textarea>
+    <div style="display:flex;gap:10px;margin-top:12px">
+      <button class="btn" type="submit">Pay & Generate</button>
+      <a class="btn secondary" href="/pricing.html">Back</a>
+    </div>
+  </form>
+</div>
+
+<div class="footer container">
+  <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px">
+    <div>
+      <div class="badge">© 2016–2025 P12Hub</div>
+      <div class="muted">Unofficial template for P12 certificate storefronts. Replace content with your own terms.</div>
+    </div>
+    <div>
+      <a href="/terms.html">Terms</a> · <a href="/privacy.html">Privacy</a>
+    </div>
+  </div>
+</div>
+<script src="/assets/js/main.js"></script>
+
+</body></html>
