@@ -1,0 +1,50 @@
+
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Sign In — P12Hub</title>
+<link rel="stylesheet" href="/assets/css/style.css"/></head><body>
+
+<div class="nav">
+  <div class="nav-inner container">
+    <a class="brand" href="/index.html"><span class="logo"></span><span>P12Hub</span></a>
+    <nav class="nav-links">
+      <a href="/pricing.html">Pricing</a>
+      <a href="/CreateOrder/Standard.html">Order</a>
+      <a href="/team.html">Team</a>
+      <a href="/help.html">Help</a>
+      <a href="/share.html">Share</a>
+      <a href="/support.html">Support</a>
+      <a href="/Account/SignIn.html" class="btn ghost">Sign In</a>
+      <a href="/Account/SignUp.html" class="btn">Sign Up</a>
+    </nav>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Sign In</h2>
+  <form class="card" onsubmit="return fakeAuth(event)">
+    <label class="label">Email</label>
+    <input class="input" required type="email" name="email"/>
+    <label class="label">Password</label>
+    <input class="input" required type="password" name="password"/>
+    <div style="display:flex;gap:10px;margin-top:12px">
+      <button class="btn" type="submit">Sign In</button>
+      <a class="btn secondary" href="/Account/SignUp.html">Create account</a>
+    </div>
+  </form>
+</div>
+
+<div class="footer container">
+  <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px">
+    <div>
+      <div class="badge">© 2016–2025 P12Hub</div>
+      <div class="muted">Unofficial template for P12 certificate storefronts. Replace content with your own terms.</div>
+    </div>
+    <div>
+      <a href="/terms.html">Terms</a> · <a href="/privacy.html">Privacy</a>
+    </div>
+  </div>
+</div>
+<script src="/assets/js/main.js"></script>
+
+</body></html>
