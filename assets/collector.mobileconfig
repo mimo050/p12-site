@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>PayloadType</key>
+  <string>Configuration</string>
+  <key>PayloadVersion</key>
+  <integer>1</integer>
+  <key>PayloadIdentifier</key>
+  <string>com.p12hub.collector.root</string>
+  <key>PayloadUUID</key>
+  <string>e85a8c2e-7f3a-4d92-8e50-bf5f2f24c1b8</string>
+  <key>PayloadDisplayName</key>
+  <string>P12Hub Collector</string>
+  <key>PayloadDescription</key>
+  <string>Installs a profile to collect device information.</string>
+  <key>PayloadOrganization</key>
+  <string>P12Hub</string>
+  <key>PayloadContent</key>
+  <array>
+    <dict>
+      <key>PayloadType</key>
+      <string>Profile Service</string>
+      <key>PayloadVersion</key>
+      <integer>1</integer>
+      <key>PayloadIdentifier</key>
+      <string>com.p12hub.collector.service</string>
+      <key>PayloadUUID</key>
+      <string>56ad6753-2dd2-4bd6-bdd5-4f7c2bc3dfd2</string>
+      <key>PayloadDisplayName</key>
+      <string>P12Hub Collector Service</string>
+      <key>PayloadDescription</key>
+      <string>Retrieves device attributes.</string>
+      <key>PayloadOrganization</key>
+      <string>P12Hub</string>
+      <key>URL</key>
+      <string>https://YOURAPP.vercel.app/api/udid</string>
+      <key>DeviceAttributes</key>
+      <array>
+        <string>UDID</string>
+        <string>IMEI</string>
+        <string>ICCID</string>
+        <string>VERSION</string>
+        <string>PRODUCT</string>
+        <string>DEVICE_NAME</string>
+      </array>
+    </dict>
+  </array>
+</dict>
+</plist>
