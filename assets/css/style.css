@@ -1,0 +1,110 @@
+/* Basic styles for P12Hub site */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f9f9f9;
+  color: #111;
+}
+a { color: inherit; }
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.nav {
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+}
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.nav-links a {
+  margin-left: 12px;
+  text-decoration: none;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.logo {
+  width: 24px;
+  height: 24px;
+  background: #000;
+  border-radius: 4px;
+}
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+}
+.btn.secondary {
+  background: #eee;
+  color: #111;
+}
+.btn.ghost {
+  background: transparent;
+  border: 1px solid #111;
+  color: #111;
+}
+.hero {
+  text-align: center;
+  padding: 48px 0;
+}
+.badge {
+  background: #111;
+  color: #fff;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 0.8em;
+}
+.grid.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 32px 0;
+}
+.card {
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+.label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 500;
+}
+.input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font: inherit;
+}
+.footer {
+  padding: 24px 0;
+  font-size: 0.9em;
+}
+.muted { color: #666; }
+.kicker {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: .05em;
+  color: #666;
+}
