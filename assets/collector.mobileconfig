@@ -34,7 +34,7 @@
       <key>PayloadOrganization</key>
       <string>P12Hub</string>
       <key>URL</key>
-      <string>https://YOURAPP.vercel.app/api/udid</string>
+      <string>https://p12-site.vercel.app/api/udid</string>
       <key>DeviceAttributes</key>
       <array>
         <string>UDID</string>
