@@ -3,13 +3,24 @@
 <plist version="1.0">
 <dict>
   <key>PayloadContent</key>
-  <array/>
+  <dict>
+    <key>URL</key>
+    <string>https://example.com/udid</string>
+    <key>DeviceAttributes</key>
+    <array>
+      <string>UDID</string>
+    </array>
+  </dict>
   <key>PayloadOrganization</key>
   <string>P12Hub</string>
+  <key>PayloadDisplayName</key>
+  <string>P12Hub UDID Collection</string>
+  <key>PayloadDescription</key>
+  <string>Installs a profile to collect the device UDID.</string>
   <key>PayloadIdentifier</key>
   <string>com.p12hub.udid</string>
   <key>PayloadUUID</key>
-  <string>00000000-0000-0000-0000-000000000000</string>
+  <string>e47ba8fb-988c-428c-8bc9-4674b1b61044</string>
   <key>PayloadVersion</key>
   <integer>1</integer>
   <key>PayloadType</key>
