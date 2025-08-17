@@ -1,3 +1,13 @@
+/**
+ * Health check:
+ *   curl -i https://YOURAPP.vercel.app/api/udid
+ *     -> 200 with "alive"
+ * Submit profile:
+ *   curl -i -X POST https://YOURAPP.vercel.app/api/udid --data-binary '<plist…>'
+ *     -> 200 with Content-Type: application/x-apple-aspen-config
+ * Template:
+ *   Open assets/collector.mobileconfig in a browser to inspect the configuration profile.
+ */
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     res.setHeader('Content-Type', 'text/plain');
