@@ -8,10 +8,13 @@
  * Template:
  *   Open assets/collector.mobileconfig in a browser to inspect the configuration profile.
  */
+import crypto from 'node:crypto';
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
-    res.setHeader('Content-Type', 'text/plain');
-    return res.status(200).send('alive');
+    res.setHeader('Content-Type', 'text/plain; charset=utf-8');
+    const msg = `UDID endpoint alive. Method=${req.method}. Send POST with mobileconfig payload.`;
+    return res.status(200).send(msg);
   }
 
   const raw = await new Promise((resolve) => {
@@ -26,7 +29,7 @@ export default async function handler(req, res) {
   // TODO: store the UDID (DB/Webhook/Sheet)
   console.log({ udid });
 
-  const profile = `<?xml version="1.0" encoding="UTF-8"?>
+  const doneProfile = `<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0"><dict>
   <key>PayloadContent</key><array/>
@@ -42,5 +45,5 @@ export default async function handler(req, res) {
 
   res.setHeader('Content-Type', 'application/x-apple-aspen-config');
   res.setHeader('Content-Disposition', 'attachment; filename="done.mobileconfig"');
-  return res.status(200).send(profile);
+  return res.status(200).send(doneProfile);
 }
